@@ -47,12 +47,40 @@
 
     <div class="container game-section">
         <h2>Trailer</h2>
-        <p>Próximamente...</p>
+        <div class="video-container">
+            <video controls>
+                <source src="./video/BadalonaSurvivor.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de videos.
+            </video>
+        </div>
     </div>
 
+    <!-- Galería con carrusel de imágenes  usando la libreria de BootStrap-->
     <div class="container game-section">
         <h2>Galería</h2>
         <p>Explora imágenes del juego.</p>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./imgs/main-menu.png" class="d-block w-100" alt="Main Menu">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imgs/stage1.png" class="d-block w-100" alt="Fase 1">
+                    
+                </div>
+                <div class="carousel-item">
+                    <img src="./imgs/stage2.png" class="d-block w-100" alt="Fase 2">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </div>
 
     <footer class="text-center p-3">
